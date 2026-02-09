@@ -1,0 +1,532 @@
+<!DOCTYPE html><html lang="en"><head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A2B4C',
+                        secondary: '#A69F94',
+                        accent: '#B8A04A',
+                        ivory: '#F7F5F0',
+                        charcoal: '#2D2D2D',
+                    },
+                    fontFamily: {
+                        sans: ['DM Sans', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>::-webkit-scrollbar{display:none;}</style>
+</head>
+<body class="font-sans antialiased bg-ivory text-charcoal">
+
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-ivory border-b border-secondary/30">
+    <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-primary flex items-center justify-center">
+                <span class="text-ivory font-bold text-sm">A</span>
+            </div>
+            <span class="text-xl font-semibold tracking-tight text-primary">Arcumen Studio</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+            <a href="#problem" class="text-sm font-medium text-secondary hover:text-primary transition">The Problem</a>
+            <a href="#approach" class="text-sm font-medium text-secondary hover:text-primary transition">Our Approach</a>
+            <a href="#offering" class="text-sm font-medium text-secondary hover:text-primary transition">Services</a>
+            <a href="#why-us" class="text-sm font-medium text-secondary hover:text-primary transition">Why Us</a>
+        </nav>
+        <button class="bg-accent text-ivory px-6 py-2.5 text-sm font-medium hover:bg-accent/90 transition">
+            Book a conversation
+        </button>
+    </div>
+</header>
+
+<section id="hero" class="relative pt-32 pb-20 px-8 h-[680px] flex items-center overflow-hidden bg-primary">
+    <img class="absolute inset-0 w-full h-full object-cover z-0" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4fed755722-4180721f341a48be6eb4.png" alt="abstract dark blue textured surface with craters and water droplets, deep navy blue aesthetic, macro detail, cinematic lighting, metallic texture">
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-primary/30 z-0"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto w-full">
+        <div class="max-w-4xl">
+            <div class="inline-block px-4 py-1.5 bg-white/10 border border-white/20 mb-6 backdrop-blur-sm">
+                <span class="text-xs font-medium text-accent tracking-wide uppercase">Professional Services Optimization</span>
+            </div>
+            <h1 class="text-7xl font-serif font-bold leading-tight mb-6 text-white drop-shadow-md">
+                Operate better.<br>Deliver better.
+            </h1>
+            <p class="text-xl text-ivory/90 leading-relaxed mb-10 max-w-3xl font-light">
+                Arcumen Studio helps law firms and M&amp;A boutiques reduce friction, surface blind spots, and turn informal workflows into systems that scale.
+            </p>
+            <button class="bg-accent text-ivory px-8 py-4 text-base font-medium hover:bg-accent/90 transition inline-flex items-center space-x-2 group shadow-lg shadow-black/20">
+                <span>Book a conversation</span>
+                <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section id="problem" class="py-24 px-8 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-12 gap-16">
+            <div class="col-span-5">
+                <h2 class="text-5xl font-serif font-bold mb-6 leading-tight text-primary">
+                    You can't fix what you can't see.
+                </h2>
+                <p class="text-lg text-secondary font-medium">
+                    Most service firms have invisible workflows and autonomy hides inefficiency
+                </p>
+            </div>
+            <div class="col-span-7">
+                <p class="text-lg text-charcoal leading-relaxed mb-8">
+                    The result? Stalled decisions. The same conversations happening over and over. Modernization initiatives that get announced, half-started, then quietly abandoned. We've seen firms circle the same operational problems for five, sometimes eight years. Everyone knows something's wrong. Nobody can articulate what.
+                </p>
+                <div class="border-l-4 border-accent pl-6 py-2">
+                    <p class="text-xl font-serif italic text-primary leading-relaxed">
+                        Arcumen gives you an evidence-based map of your firm. A reality everyone can finally look at together and say: okay, now we see it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="approach" class="py-24 px-8 bg-ivory">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-12 gap-16">
+            <div class="col-span-5">
+                <h2 class="text-5xl font-serif font-bold mb-6 leading-tight text-primary">
+                    Our point of view
+                </h2>
+                <p class="text-lg text-secondary font-medium">
+                    AI does not create leverage on its own.
+                </p>
+            </div>
+            <div class="col-span-7">
+                <p class="text-lg text-charcoal leading-relaxed mb-8">
+                    Leverage comes from:
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-accent mt-1.5"></i>
+                        <span class="text-lg text-charcoal">clear workflows</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-accent mt-1.5"></i>
+                        <span class="text-lg text-charcoal">explicit decision logic</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-accent mt-1.5"></i>
+                        <span class="text-lg text-charcoal">shared visibility</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-check text-accent mt-1.5"></i>
+                        <span class="text-lg text-charcoal">and systems that support how professionals actually work</span>
+                    </li>
+                </ul>
+                <p class="text-lg text-charcoal leading-relaxed mb-8">
+                    Arcumen operates at this intersection: before tools, before automation, before scale breaks.
+                </p>
+                <div class="border-l-4 border-accent pl-6 py-2">
+                    <p class="text-xl font-serif italic text-primary leading-relaxed">
+                        Workflow first, tools second.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="what-we-do" class="py-24 px-8 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-12 gap-16">
+            <div class="col-span-5">
+                <h2 class="text-5xl font-serif font-bold mb-6 leading-tight text-primary">
+                    What we do
+                </h2>
+                <p class="text-lg text-secondary font-medium">
+                    We help firms see how they actually operate, identify where value leaks, and design practical interventions — from low-tech fixes to AI-enabled systems.
+                </p>
+            </div>
+            <div class="col-span-7">
+                <p class="text-lg text-charcoal leading-relaxed mb-6">
+                    Our work focuses on:
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-ivory p-6 border border-secondary/30">
+                        <i class="fa-solid fa-chart-line text-2xl text-accent mb-4"></i>
+                        <h3 class="text-base font-semibold mb-2 text-primary">Operational clarity</h3>
+                    </div>
+                    <div class="bg-ivory p-6 border border-secondary/30">
+                        <i class="fa-solid fa-diagram-project text-2xl text-accent mb-4"></i>
+                        <h3 class="text-base font-semibold mb-2 text-primary">Workflow design</h3>
+                    </div>
+                    <div class="bg-ivory p-6 border border-secondary/30">
+                        <i class="fa-solid fa-brain text-2xl text-accent mb-4"></i>
+                        <h3 class="text-base font-semibold mb-2 text-primary">Minimal and responsible AI integration</h3>
+                    </div>
+                    <div class="bg-ivory p-6 border border-secondary/30">
+                        <i class="fa-solid fa-compass text-2xl text-accent mb-4"></i>
+                        <h3 class="text-base font-semibold mb-2 text-primary">Decision support systems</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="offering" class="py-24 px-8 bg-primary text-ivory">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-serif font-bold mb-6">
+                The Firm Visibility Sprint
+            </h2>
+            <p class="text-xl text-ivory/80 max-w-3xl mx-auto">
+                A focused 4–6 week sprint that changes how your firm works.
+            </p>
+        </div>
+        
+        <div class="bg-white/5 border border-white/10 p-10 mb-12">
+            <p class="text-lg leading-relaxed mb-6">
+                No eighteen-month consulting engagement. No endless steering committee meetings. No hype about digital transformation.
+            </p>
+            <p class="text-xl font-semibold">
+                Clarity. Alignment. The next best steps. Delivered fast.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-12 mb-16">
+            <div>
+                <h3 class="text-2xl font-serif font-bold mb-6">What it includes</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-dot text-accent mt-1.5 text-sm"></i>
+                        <span class="text-base">Diagnostic of workflows, tools, and information flows</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-dot text-accent mt-1.5 text-sm"></i>
+                        <span class="text-base">Interviews and surveys across roles</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-dot text-accent mt-1.5 text-sm"></i>
+                        <span class="text-base">Identification of friction, rework, and blind spots</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-dot text-accent mt-1.5 text-sm"></i>
+                        <span class="text-base">A clear opportunity map (quick wins vs. structural moves)</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-serif font-bold mb-6">What you get</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-accent mt-1.5 text-sm"></i>
+                        <span class="text-base">A shared view of how your firm actually works</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-accent mt-1.5 text-sm"></i>
+                        <span class="text-base">Prioritized improvement opportunities</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-accent mt-1.5 text-sm"></i>
+                        <span class="text-base">A concrete roadmap for operational and AI initiatives</span>
+                    </li>
+                </ul>
+                <p class="text-sm text-ivory/60 mt-6">(Typical duration: 3–4 weeks)</p>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-3xl font-serif font-bold mb-10 text-center">How it works</h3>
+            <div class="grid grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 border border-accent/30 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-magnifying-glass text-2xl text-accent"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-3">Understand</h4>
+                    <p class="text-sm text-ivory/70">We map how work, information, and decisions flow today.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 border border-accent/30 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-stethoscope text-2xl text-accent"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-3">Diagnose</h4>
+                    <p class="text-sm text-ivory/70">We surface patterns, bottlenecks, and hidden costs.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 border border-accent/30 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-pen-ruler text-2xl text-accent"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-3">Design</h4>
+                    <p class="text-sm text-ivory/70">We propose targeted interventions — from process fixes to system design.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 border border-accent/30 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-rocket text-2xl text-accent"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-3">Enable</h4>
+                    <p class="text-sm text-ivory/70">If needed, we support implementation through focused sprints.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why-us" class="py-24 px-8 bg-white relative overflow-hidden">
+    <!-- Decorative background element -->
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-ivory/50 -z-0 skew-x-12 translate-x-20"></div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+        <div class="grid grid-cols-12 gap-16 items-start">
+            <!-- Left Column: Content & Accordion -->
+            <div class="col-span-12 lg:col-span-7">
+                <div class="mb-12">
+                    <h2 class="text-5xl font-serif font-bold mb-6 text-primary">
+                        Why Arcumen
+                    </h2>
+                    <p class="text-xl text-secondary leading-relaxed">
+                        Arcumen combines deep understanding of professional services workflows, experience in financial services, and a systems-first, human-centered approach to AI.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <details class="group border border-secondary/30 bg-ivory">
+                        <summary class="cursor-pointer p-6 font-semibold text-lg flex items-center justify-between hover:bg-white transition text-primary">
+                            <span>A dedicated, neutral resource who hears what internal teams can't</span>
+                            <i class="fa-solid fa-chevron-down text-accent group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-charcoal leading-relaxed border-t border-secondary/10 pt-4">
+                            Your task-force doesn't have the time. Or the neutrality. People tell them what they think partners want to hear. We do deep interviews across your firm. Structured mapping. Safe conversations where associates actually say what's going wrong. Through that, we reveal the full 360° of how your firm operates — which is almost never how leadership believes it operates. You get alignment. Shared truth. Decisions grounded in evidence rather than gut feeling.
+                        </div>
+                    </details>
+
+                    <details class="group border border-secondary/30 bg-ivory">
+                        <summary class="cursor-pointer p-6 font-semibold text-lg flex items-center justify-between hover:bg-white transition text-primary">
+                            <span>Workflow-first. Tools second.</span>
+                            <i class="fa-solid fa-chevron-down text-accent group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-charcoal leading-relaxed border-t border-secondary/10 pt-4">
+                            Buying a tool won't fix inconsistent workflows. It usually makes things worse. You end up with three systems doing the same thing and nobody using any of them properly. We improve your processes first. Then we help you choose tools that fit your culture. And we train your people so adoption actually happens — which is the part most firms skip and then wonder why the new CRM sits unused.
+                        </div>
+                    </details>
+
+                    <details class="group border border-secondary/30 bg-ivory">
+                        <summary class="cursor-pointer p-6 font-semibold text-lg flex items-center justify-between hover:bg-white transition text-primary">
+                            <span>Legal-specific expertise that delivers operational ROI</span>
+                            <i class="fa-solid fa-chevron-down text-accent group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-charcoal leading-relaxed border-t border-secondary/10 pt-4">
+                            We blend legal domain knowledge with operational depth. Recommendations you can implement next week. Specific to how your firm works, the politics involved, the cultural constraints.
+                        </div>
+                    </details>
+
+                    <details class="group border border-secondary/30 bg-ivory">
+                        <summary class="cursor-pointer p-6 font-semibold text-lg flex items-center justify-between hover:bg-white transition text-primary">
+                            <span>Psychological safety that makes the truth speakable</span>
+                            <i class="fa-solid fa-chevron-down text-accent group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-charcoal leading-relaxed border-t border-secondary/10 pt-4">
+                            Internally, people give safe answers. That's just how it works. Externally, they open up. We're neutral. We're not going to the managing partner with names attached. People tell us things they've been sitting on for years. We surface hidden bottlenecks. Cultural tensions. Friction points partners genuinely don't know exist. A trustworthy diagnosis. Rapid partner alignment. The kind that doesn't happen when everyone's still protecting their position.
+                        </div>
+                    </details>
+
+                    <details class="group border border-secondary/30 bg-ivory">
+                        <summary class="cursor-pointer p-6 font-semibold text-lg flex items-center justify-between hover:bg-white transition text-primary">
+                            <span>A complete blueprint of how your firm really works</span>
+                            <i class="fa-solid fa-chevron-down text-accent group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-charcoal leading-relaxed border-t border-secondary/10 pt-4">
+                            Assumptions aren't a strategy. But that's what most firms run on. We translate your workflows, habits, tools, and decision patterns into a clear map. Your firm's operational blueprint. The thing that makes visible what's been invisible.
+                        </div>
+                    </details>
+
+                    <details class="group border border-secondary/30 bg-ivory">
+                        <summary class="cursor-pointer p-6 font-semibold text-lg flex items-center justify-between hover:bg-white transition text-primary">
+                            <span>Data-driven workload and hiring decisions</span>
+                            <i class="fa-solid fa-chevron-down text-accent group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="px-6 pb-6 text-charcoal leading-relaxed border-t border-secondary/10 pt-4">
+                            Right now, capacity decisions get made on anecdotes. You spend 30% of the partner meeting debating whether you need another associate while some people aren't even at full utilization. We help you introduce simple measures. Track workload. See bottlenecks. Know when you actually need to expand — and when you don't. Better hiring. Fairer workloads. Less burnout. Predictable delivery.
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Right Column: Founder Image & Stats -->
+            <div class="col-span-12 lg:col-span-5 relative lg:sticky lg:top-24">
+                <div class="relative">
+                    <!-- Decorative border frame -->
+                    <div class="absolute top-4 -right-4 w-full h-full border-2 border-accent/40 z-0"></div>
+                    
+                    <!-- Image container -->
+                    <div class="relative z-10 bg-primary overflow-hidden h-[600px] shadow-xl">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b16e41b997-c752631ce52d7e003185.png" alt="Founder Portrait" class="w-full h-full object-cover object-top opacity-90 hover:opacity-100 transition duration-700 grayscale hover:grayscale-0">
+                        
+                        <!-- Overlay Content -->
+                        <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-primary/95 via-primary/80 to-transparent">
+                            <div class="border-l-2 border-accent pl-4">
+                                <p class="text-ivory text-lg font-serif italic mb-2">
+                                    "We help firms see how they actually operate, identify where value leaks, and design practical interventions."
+                                </p>
+                                <p class="text-accent text-sm font-bold uppercase tracking-widest mt-4">Founder, Arcumen Studio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Stats/Pillars below image -->
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-ivory p-4 border border-secondary/20 text-center">
+                        <i class="fa-solid fa-briefcase text-2xl text-accent mb-2"></i>
+                        <p class="text-xs font-bold text-primary uppercase tracking-wide">Legal Expertise</p>
+                    </div>
+                    <div class="bg-ivory p-4 border border-secondary/20 text-center">
+                        <i class="fa-solid fa-brain text-2xl text-accent mb-2"></i>
+                        <p class="text-xs font-bold text-primary uppercase tracking-wide">Systems Thinking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="proof" class="py-24 px-8 bg-ivory">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <p class="text-sm font-semibold text-accent uppercase tracking-wider mb-4">Proof &amp; experience</p>
+            <h2 class="text-4xl font-serif font-bold mb-6 text-primary">
+                Our work has helped firms
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-2 gap-12 mb-12">
+            <ul class="space-y-4">
+                <li class="flex items-start space-x-3">
+                    <i class="fa-solid fa-check-circle text-accent mt-1"></i>
+                    <span class="text-charcoal">Reduce reliance on individual memory</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <i class="fa-solid fa-check-circle text-accent mt-1"></i>
+                    <span class="text-charcoal">Create a shared source of truth for commercial activity</span>
+                </li>
+            </ul>
+            <ul class="space-y-4">
+                <li class="flex items-start space-x-3">
+                    <i class="fa-solid fa-check-circle text-accent mt-1"></i>
+                    <span class="text-charcoal">Gain visibility into pipelines and priorities</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <i class="fa-solid fa-check-circle text-accent mt-1"></i>
+                    <span class="text-charcoal">Prepare responsibly for AI adoption</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-white border border-secondary/30 p-8">
+            <h3 class="text-lg font-semibold mb-4 text-primary">Artifacts often include:</h3>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-ivory border border-secondary/30 text-sm text-charcoal">Maturity maps</span>
+                <span class="px-4 py-2 bg-ivory border border-secondary/30 text-sm text-charcoal">Workflow diagrams</span>
+                <span class="px-4 py-2 bg-ivory border border-secondary/30 text-sm text-charcoal">Opportunity matrices</span>
+                <span class="px-4 py-2 bg-ivory border border-secondary/30 text-sm text-charcoal">System blueprints</span>
+            </div>
+            <p class="text-sm text-secondary mt-6">(Examples shared in conversations)</p>
+        </div>
+    </div>
+</section>
+
+<section id="who-for" class="py-24 px-8 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-serif font-bold mb-6 text-center text-primary">
+                Who this is for
+            </h2>
+            <p class="text-xl text-secondary mb-12 text-center">
+                This is a strong fit if:
+            </p>
+            
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-ivory p-8 border-l-4 border-accent">
+                    <p class="text-charcoal">You lead or operate within a law firm or M&amp;A boutique</p>
+                </div>
+                <div class="bg-ivory p-8 border-l-4 border-accent">
+                    <p class="text-charcoal">Your firm is growing, but systems haven't caught up</p>
+                </div>
+                <div class="bg-ivory p-8 border-l-4 border-accent">
+                    <p class="text-charcoal">AI feels relevant, but unclear or risky</p>
+                </div>
+                <div class="bg-ivory p-8 border-l-4 border-accent">
+                    <p class="text-charcoal">You want clarity before committing to tools or vendors</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="py-24 px-8 bg-ivory">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-serif font-bold mb-12 text-center text-primary">
+            Frequently asked questions
+        </h2>
+        
+        <div class="space-y-6">
+            <div class="bg-white border border-secondary/30 p-8">
+                <h3 class="text-lg font-semibold mb-3 text-primary">Do you implement tools?</h3>
+                <p class="text-charcoal">Sometimes. Only when the operating logic is clear.</p>
+            </div>
+            
+            <div class="bg-white border border-secondary/30 p-8">
+                <h3 class="text-lg font-semibold mb-3 text-primary">Do you work with small firms?</h3>
+                <p class="text-charcoal">Yes — especially when growth or complexity is outpacing systems.</p>
+            </div>
+            
+            <div class="bg-white border border-secondary/30 p-8">
+                <h3 class="text-lg font-semibold mb-3 text-primary">Is this an AI consultancy?</h3>
+                <p class="text-charcoal">No. AI is a lever, not the starting point.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="final-cta" class="py-32 px-8 bg-primary text-ivory">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-5xl font-serif font-bold mb-6">
+            See your firm clearly.
+        </h2>
+        <p class="text-xl text-ivory/90 mb-10 leading-relaxed">
+            If you want to understand how your firm actually operates — and where improvement is possible — we should talk.
+        </p>
+        <button class="bg-accent text-ivory px-10 py-4 text-lg font-medium hover:bg-accent/90 transition inline-flex items-center space-x-2 group">
+            <span>Book a conversation</span>
+            <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+        </button>
+    </div>
+</section>
+
+<footer id="footer" class="py-12 px-8 bg-white border-t border-secondary/30">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-primary flex items-center justify-center">
+                    <span class="text-ivory font-bold text-sm">A</span>
+                </div>
+                <span class="text-lg font-semibold text-primary">Arcumen Studio</span>
+            </div>
+            <p class="text-sm text-secondary">© 2024 Arcumen Studio. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body></html>

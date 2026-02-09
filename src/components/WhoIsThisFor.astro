@@ -1,0 +1,55 @@
+---
+const fitCriteria = [
+  "Boutique PE funds tracking portfolio companies and deal pipeline",
+  "Family offices monitoring investments and founder networks",
+  "Strategy consultants watching client sectors and competitive moves",
+  "Investment banks covering target accounts and M&A activity",
+];
+
+const notFit = [
+  "You need enterprise integrations or have an internal ops team",
+  "You want a dashboard to log into (we deliver via email)",
+  "Your watchlist changes hourly (this is built for consistent monitoring)",
+];
+---
+
+<section id="who-for" class="py-24 px-8 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-display font-bold mb-6 text-center text-navy">
+        Who this is for
+      </h2>
+      <p class="text-xl text-stone mb-12 text-center">
+        This works best for:
+      </p>
+
+      <!-- Fit criteria - 2x2 Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        {fitCriteria.map((item) => (
+          <div class="bg-ivory p-8 border-l-4 border-gold">
+            <p class="text-charcoal">{item}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Not a fit -->
+      <div class="mb-12">
+        <p class="text-lg text-stone font-medium mb-6">Not a fit if:</p>
+        <div class="space-y-4">
+          {notFit.map((item) => (
+            <div class="p-6 border border-stone/30">
+              <p class="text-charcoal">{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Personal closing -->
+      <div class="border-l-4 border-gold pl-6 py-2">
+        <p class="text-lg text-charcoal leading-relaxed">
+          I work with relationship-driven businesses because I understand firms where trust, discretion, and personal touch matter. This isn't mass-market automation—it's built specifically for how boutique firms operate.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

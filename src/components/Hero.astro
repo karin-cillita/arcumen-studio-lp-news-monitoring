@@ -1,0 +1,55 @@
+---
+interface Props {
+  calendarUrl?: string;
+}
+
+const { calendarUrl = "#" } = Astro.props;
+---
+
+<section id="hero" class="relative pt-32 pb-20 px-8 min-h-[680px] flex items-center overflow-hidden bg-navy">
+  <!-- Background Image -->
+  <img
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    src="/hero-bg.png"
+    alt=""
+  />
+
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/70 to-navy/30 z-0"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto w-full">
+    <div class="max-w-4xl">
+      <!-- Badge -->
+      <div class="inline-block px-4 py-1.5 bg-white/10 border border-white/20 mb-6 backdrop-blur-sm">
+        <span class="text-xs font-medium text-gold tracking-wide uppercase">Portfolio News Monitoring</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-5xl sm:text-6xl md:text-7xl font-display font-bold leading-tight mb-6 text-white drop-shadow-md">
+        Never miss a moment that matters in your portfolio
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-xl text-ivory/90 leading-relaxed mb-10 max-w-3xl font-light">
+        Automated news monitoring for boutique PE funds, family offices, and advisory firms. Know about funding rounds, exits, leadership changes, and market shifts—before your next conversation.
+      </p>
+
+      <!-- CTA Button -->
+      <div>
+        <a
+          href={calendarUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-gold text-ivory px-8 py-4 text-base font-medium hover:bg-gold/90 transition inline-flex items-center space-x-2 group shadow-lg shadow-black/20"
+          onclick="plausible('booking_click')"
+        >
+          <span>Start your free week</span>
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+        <p class="text-sm text-ivory/60 mt-3">Takes 15 minutes to set up</p>
+      </div>
+    </div>
+  </div>
+</section>

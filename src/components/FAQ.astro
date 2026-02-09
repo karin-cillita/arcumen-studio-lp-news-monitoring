@@ -1,0 +1,45 @@
+---
+const faqs = [
+  {
+    question: "Do I need to give you access to our CRM or internal systems?",
+    answer: "No. We only need your watchlist (company names, key people, sectors). Monitoring happens externally, briefs are delivered via email.",
+  },
+  {
+    question: "How do you source the news?",
+    answer: "We aggregate from public sources—press releases, industry publications, regulatory filings, company announcements—then filter and format what's relevant to your watchlist.",
+  },
+  {
+    question: "What if I want to change the watchlist during the free week?",
+    answer: "Easy. Just email us the changes and we'll update the monitoring same day.",
+  },
+  {
+    question: "Can I see a sample before committing to the free week?",
+    answer: "Yes. Book the 15-minute setup call and I'll show you a mock brief based on a sample portfolio before we configure yours.",
+  },
+  {
+    question: "What happens after the free week if I don't continue?",
+    answer: "Nothing. No payment, no follow-up unless you ask for it. The monitoring just stops.",
+  },
+  {
+    question: "How is this different from Google Alerts or Bloomberg?",
+    answer: "Google Alerts generate 90% noise. Bloomberg costs €24K/year and requires someone to extract what's relevant. We deliver pre-filtered, actionable intelligence at a fraction of the cost.",
+  },
+];
+---
+
+<section id="faq" class="py-24 px-8 bg-ivory">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-display font-bold mb-12 text-center text-navy">
+      Frequently asked questions
+    </h2>
+
+    <div class="space-y-6">
+      {faqs.map((faq) => (
+        <div class="bg-white border border-stone/30 p-8">
+          <h3 class="text-lg font-semibold mb-3 text-navy">{faq.question}</h3>
+          <p class="text-charcoal">{faq.answer}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/layout.astro'
+import Navigation from '../components/Navigation.astro'
+import Hero from '../components/Hero.astro'
+import Problem from '../components/Problem.astro'
+import WhatItIs from '../components/WhatItIs.astro'
+import WhatItDoes from '../components/WhatItDoes.astro'
+import Offering from '../components/Offering.astro'
+import MidCTA from '../components/MidCTA.astro'
+import Expansion from '../components/Expansion.astro'
+import WhoIsThisFor from '../components/WhoIsThisFor.astro'
+import FAQ from '../components/FAQ.astro'
+import FinalCTA from '../components/FinalCTA.astro'
+import Footer from '../components/Footer.astro'
+
+const calendarUrl = "https://cal.com/karin-garcia/30min";
+---
+
+<Layout>
+  <Navigation calendarUrl={calendarUrl} />
+
+  <main>
+    <Hero calendarUrl={calendarUrl} />
+    <Problem />
+    <WhatItIs />
+    <WhatItDoes />
+    <Offering />
+    <MidCTA calendarUrl={calendarUrl} />
+    <Expansion />
+    <WhoIsThisFor />
+    <FAQ />
+    <FinalCTA calendarUrl={calendarUrl} />
+  </main>
+
+  <Footer />
+</Layout>

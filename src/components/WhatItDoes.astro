@@ -1,0 +1,52 @@
+---
+const benefits = [
+  {
+    title: "Never miss an outreach trigger",
+    description: "Portfolio company raises Series B? Key exec leaves? Acquisition announced? You know immediately—not three weeks later when someone mentions it on LinkedIn.",
+    icon: "bell",
+  },
+  {
+    title: "Show up informed when it matters",
+    description: "Walk into conversations with current context. Reference recent developments. Maintain the \"always in the loop\" presence that builds trust.",
+    icon: "eye",
+  },
+  {
+    title: "Reclaim time spent on manual monitoring",
+    description: "Stop scrolling news sites, setting Google Alerts that don't work, or asking associates to track updates. It happens automatically.",
+    icon: "clock",
+  },
+];
+---
+
+<section id="what-it-does" class="py-24 px-8 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {benefits.map((benefit) => (
+        <div class="bg-ivory p-8 border border-stone/30">
+          <!-- Icon -->
+          <div class="w-12 h-12 bg-gold/20 border border-gold/30 flex items-center justify-center mb-6">
+            {benefit.icon === "bell" && (
+              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+              </svg>
+            )}
+            {benefit.icon === "eye" && (
+              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+              </svg>
+            )}
+            {benefit.icon === "clock" && (
+              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            )}
+          </div>
+
+          <h3 class="text-lg font-semibold text-navy mb-3">{benefit.title}</h3>
+          <p class="text-charcoal leading-relaxed">{benefit.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
