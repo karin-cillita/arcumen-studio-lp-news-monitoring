@@ -10,15 +10,16 @@ Arcumen Studio - Never miss a moment that matters in your portfolio.
 Automated news monitoring for boutique PE funds, family offices, and advisory firms. Know about funding rounds, exits, leadership changes, and market shifts—before your next conversation.
 
 ### CTA
-[Start your free week] → Takes 15 minutes to set up
+[Get your first brief] → Takes 2 minutes | First brief in 24 hours
+or [Schedule a call first] → Cal.com link
 
 ---
 
-## The Invisible Problem
+## The problem: Brilliant teams, blind spots
 
-You find out a portfolio company raised Series B three weeks after it happened. A key executive left, and you hear about it on LinkedIn. A client's competitor got acquired, and nobody on your team knew to reach out.
+You find out a portfolio company raised Series B three weeks late. A key executive left and you missed it. A client's competitor got acquired while you were in meetings.
 
-These aren't isolated incidents. They're symptoms of a gap: brilliant professionals with excellent networks, but no systematic way to monitor what matters. The opportunities don't disappear—they just go to whoever showed up informed.
+Opportunities go to whoever showed up informed.
 
 ---
 

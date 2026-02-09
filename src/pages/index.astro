@@ -14,22 +14,23 @@ import FinalCTA from '../components/FinalCTA.astro'
 import Footer from '../components/Footer.astro'
 
 const calendarUrl = "https://cal.com/karin-garcia/30min";
+const formUrl = "#form"; // TODO: Replace with Typeform/Tally URL
 ---
 
 <Layout>
-  <Navigation calendarUrl={calendarUrl} />
+  <Navigation formUrl={formUrl} />
 
   <main>
-    <Hero calendarUrl={calendarUrl} />
+    <Hero calendarUrl={calendarUrl} formUrl={formUrl} />
     <Problem />
     <WhatItIs />
     <WhatItDoes />
     <Offering />
-    <MidCTA calendarUrl={calendarUrl} />
+    <MidCTA calendarUrl={calendarUrl} formUrl={formUrl} />
     <Expansion />
     <WhoIsThisFor />
     <FAQ />
-    <FinalCTA calendarUrl={calendarUrl} />
+    <FinalCTA calendarUrl={calendarUrl} formUrl={formUrl} />
   </main>
 
   <Footer />

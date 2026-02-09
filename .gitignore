@@ -25,3 +25,5 @@ pnpm-debug.log*
 
 # Visual references (with the backslash for the space)
 docs/visual\ references/
+# Local Netlify folder
+.netlify
