@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Visual references (with the backslash for the space)
+docs/visual\ references/
