@@ -2,6 +2,7 @@
 import Layout from '../layouts/layout.astro'
 import Navigation from '../components/Navigation.astro'
 import Hero from '../components/Hero.astro'
+import TrustSignal from '../components/TrustSignal.astro'
 import Problem from '../components/Problem.astro'
 import WhatItIs from '../components/WhatItIs.astro'
 import WhatItDoes from '../components/WhatItDoes.astro'
@@ -22,6 +23,7 @@ const formUrl = "#form"; // TODO: Replace with Typeform/Tally URL
 
   <main>
     <Hero calendarUrl={calendarUrl} formUrl={formUrl} />
+    <TrustSignal />
     <Problem />
     <WhatItIs />
     <WhatItDoes />
